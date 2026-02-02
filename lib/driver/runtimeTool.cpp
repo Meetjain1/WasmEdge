@@ -73,9 +73,8 @@ ToolOnModule(WasmEdge::VM::VM &VM, const std::string &FuncName,
           Opt.Args.value()[I + 1], I);
       return EXIT_FAILURE;
     } catch (const std::out_of_range &) {
-      spdlog::error(
-          "Argument '{}' for parameter {}: value out of range"sv,
-          Opt.Args.value()[I + 1], I);
+      spdlog::error("Argument '{}' for parameter {}: value out of range"sv,
+                    Opt.Args.value()[I + 1], I);
       return EXIT_FAILURE;
     }
   }
@@ -93,9 +92,8 @@ ToolOnModule(WasmEdge::VM::VM &VM, const std::string &FuncName,
             Opt.Args.value()[I], I);
         return EXIT_FAILURE;
       } catch (const std::out_of_range &) {
-        spdlog::error(
-            "Argument '{}' for parameter {}: value out of range"sv,
-            Opt.Args.value()[I], I);
+        spdlog::error("Argument '{}' for parameter {}: value out of range"sv,
+                      Opt.Args.value()[I], I);
         return EXIT_FAILURE;
       }
     }
@@ -215,9 +213,8 @@ ToolOnComponent(WasmEdge::VM::VM &VM, const std::string &FuncName,
           Opt.Args.value()[I + 1], I);
       return EXIT_FAILURE;
     } catch (const std::out_of_range &) {
-      spdlog::error(
-          "Argument '{}' for parameter {}: value out of range"sv,
-          Opt.Args.value()[I + 1], I);
+      spdlog::error("Argument '{}' for parameter {}: value out of range"sv,
+                    Opt.Args.value()[I + 1], I);
       return EXIT_FAILURE;
     }
   }
@@ -235,9 +232,8 @@ ToolOnComponent(WasmEdge::VM::VM &VM, const std::string &FuncName,
             Opt.Args.value()[I], I);
         return EXIT_FAILURE;
       } catch (const std::out_of_range &) {
-        spdlog::error(
-            "Argument '{}' for parameter {}: value out of range"sv,
-            Opt.Args.value()[I], I);
+        spdlog::error("Argument '{}' for parameter {}: value out of range"sv,
+                      Opt.Args.value()[I], I);
         return EXIT_FAILURE;
       }
     }
